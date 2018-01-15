@@ -7,6 +7,25 @@ var ViewModel = function() {
         this.clickCount(this.clickCount() + 1);
     };
 
+    this.title = ko.computed(function(){
+        var title;
+        var clicks = this.clickCount();
+        if (clicks < 10) {
+            title = 'Newborn';
+        } else if (clicks < 50) {
+            title = 'Infant';
+        } else if (clicks < 100) {
+            title = 'Child';
+        } else if (clicks < 200) {
+            title = 'Teen';
+        } else if (clicks < 500) {
+            title = 'Adult';
+        } else {
+            title = 'Ninja';
+        }
+        return title;
+    }, this);
+
 }
 
 ko.applyBindings(new ViewModel())
