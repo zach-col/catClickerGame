@@ -1,7 +1,7 @@
-ud989-cat-clicker-ko-starter
+cat clicker ko starter
 ============================
 
-ud989-cat-clicker-ko-starter
+cat clicker ko starter
 
 Cat clicker project created with Knockout framework
 to get started
